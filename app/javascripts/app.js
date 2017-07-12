@@ -115,6 +115,8 @@ window.App = {
     });
   },
   validateAccount: function(hash) {
+    var self = this;
+
     if (typeof hash == 'undefined') {
       hash = document.getElementById('hash').value;
     }
@@ -127,7 +129,6 @@ window.App = {
       return meta.validateUserByHash(hash, {from: account});
     }).then(function(address) {
       self.setStatus("The following account is validated: " + address);
-      self.refreshBalance();
     }).catch(function(e) {
       console.log(e);
       self.setStatus("Error validating account; see log.");
