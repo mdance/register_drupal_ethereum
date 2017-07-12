@@ -1,13 +1,13 @@
 {
-  "name": "truffle-init-webpack",
+  "name": "register-drupal-ethereum",
   "version": "0.0.1",
-  "description": "Frontend example using truffle v3",
+  "description": "Provides ethereum connectivity for Drupal.",
   "scripts": {
     "lint": "eslint ./",
     "build": "webpack",
     "dev": "webpack-dev-server"
   },
-  "author": "Douglas von Kohorn",
+  "author": "Thorsten Krug",
   "license": "MIT",
   "devDependencies": {
     "babel-cli": "^6.22.2",
@@ -33,5 +33,32 @@
     "web3": "^0.18.2",
     "webpack": "^2.2.1",
     "webpack-dev-server": "^2.3.0"
-  }
+  },
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.26.4",
+    "style-loader": "^0.13.2",
+    "truffle-default-builder": "^2.0.0",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/digitaldonkey/register_drupal_ethereum.git"
+  },
+  "keywords": [
+    "ethereum",
+    "truffle",
+    "dapps",
+    "smart",
+    "contracts"
+  ],
+  "bugs": {
+    "url": "https://github.com/digitaldonkey/register_drupal_ethereum/issues"
+  },
+  "homepage": "https://github.com/digitaldonkey/register_drupal_ethereum#readme"
 }
